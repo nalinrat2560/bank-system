@@ -23,13 +23,3 @@ class Account:
     def show_balance(self):
         print(f"ยอดเงินคงเหลือ:{self.balance}บาท")
 
-class SavingAccount(Account):
-    def __init__(self, ower, balance=0):
-        super().__init__(ower, balance)
-        self.interest_rate = interest_rate
-
-    def add_interest(self):
-        interest = self.balance * self.interest_rate
-        self.balance += interest
-        print (f"เพิ่มดอกเบี้ย {interest:.2f}บาท")
-
